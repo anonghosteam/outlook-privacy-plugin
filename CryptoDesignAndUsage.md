@@ -1,0 +1,3 @@
+# OPP Crypto #
+
+The original plugin tried to call gpg.exe directly using streams.  This was sketchy at best. Several iterations of crypto code have been tried starting with the recommended method of using GPGME. Sadly on Windows there is no GPGME port for 64bit which is becoming more and more common. The current solution is based on the Bouncy Castle library which is pure C# code. This allows us to support both 32bit and 64bit versions of Office.
